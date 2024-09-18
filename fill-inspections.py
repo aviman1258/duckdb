@@ -12,5 +12,5 @@ con.execute(schema_sql)
 
 # Load data directly from the CSV file into the INSPECTIONS table
 con.execute("""
-    COPY INSPECTIONS FROM 'Food_Inspections_20240917.csv' (AUTO_DETECT TRUE);
+    COPY INSPECTIONS FROM 'restaurants-subset.csv' (AUTO_DETECT TRUE);
 """)
